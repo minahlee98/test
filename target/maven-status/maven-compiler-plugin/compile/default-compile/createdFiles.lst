@@ -1,0 +1,7 @@
+springTest\service\UserService.class
+springTest\main.class
+springTest\model\LoginInfo.class
+springTest\dao\UserDAO.class
+springTest\model\UserData.class
+springTest\controller\loginController.class
+springTest\service\UserServiceImpl.class
