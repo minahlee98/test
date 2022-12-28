@@ -42,13 +42,13 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    <link href="/view/css/signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
 
-<main class="form-signin">
+<main class="form-signin" >
   	<form id="actionForm" name="login" action="/login" method="post" autocomplete="off">
-    <img class="mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <img class="mb-4" src="/view/img/cat.png" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">

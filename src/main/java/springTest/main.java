@@ -14,7 +14,7 @@ public class main {
     public String index(Model model){
         model.addAttribute("test", "1234");
         System.out.println(model);
-        return "index";
+        return "login";
     }
 
     @RequestMapping(value="/json", produces = "application/json")

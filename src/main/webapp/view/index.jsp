@@ -27,50 +27,9 @@ System.out.println( "여기는 index.jsp > "+ hasUserData );
     </style>
 </head>
 <body>
-
+<jsp:include page="/view/common/top.jsp" />
  <header>
-    <div class="px-3 py-2 bg-dark text-white">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
 
-          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-            <li>
-              <a href="#" class="nav-link text-secondary">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                Dashboard
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-                Orders
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
-                Customers
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <div class="px-3 py-2 border-bottom mb-3">
       <div class="container d-flex flex-wrap justify-content-center">
         <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
@@ -79,8 +38,8 @@ System.out.println( "여기는 index.jsp > "+ hasUserData );
 
         <div class="text-end">
 <%        if(!hasUserData){ %>
-          <button type="button" class="btn btn-light text-dark me-2" onclick="location.href='login.jsp'">Login</button>
-          <button type="button" class="btn btn-primary" onclick="location.href='userJoin.jsp'">Sign-up</button>
+          <button type="button" class="btn btn-light text-dark me-2" onclick="location.href='/view/login.jsp'">Login</button>
+          <button type="button" class="btn btn-primary" onclick="location.href='/view/userJoin.jsp'">Sign-up</button>
 <%       }else{ %>
         <button type="button" class="btn btn-light text-dark me-2" onclick="location.href='view/logout.jsp'">Logout</button>
 
@@ -261,14 +220,6 @@ System.out.println( "여기는 index.jsp > "+ hasUserData );
 
 </main>
 
-<footer class="text-muted py-5">
-    <div class="container">
-        <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
-    </div>
-</footer>
+<jsp:include page="/view/common/footer.jsp" />
 </body>
 </html>
